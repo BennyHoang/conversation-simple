@@ -93,7 +93,6 @@ var PayloadPanel = (function() {
     }
     return null;
   }
-
   // Constructs new DOM element to use in displaying the payload
   function buildPayloadDomElement(isRequest) {
     var payloadPrettyString = jsonPrettyPrint(isRequest
@@ -126,7 +125,6 @@ var PayloadPanel = (function() {
 
     return Common.buildDomElement(payloadJson);
   }
-
   // Format (payload) JSON to make it more readable
   function jsonPrettyPrint(json) {
     if (json === null) {
