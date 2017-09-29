@@ -9,6 +9,7 @@
   <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <!-- HIDE FOR DEMO PURPOSES (GATHER DATA)
@@ -22,8 +23,9 @@
         <div id="scrollingChat"></div>
         <label for="textInput" class="inputOutline">
           <input id="textInput" class="input responsive-column"
-            placeholder="Type something" type="text"
+            placeholder="Skriv en melding" type="text"
             onkeydown="ConversationPanel.inputKeyDown(event, this)">
+          <span>Enter for å sende</span>
         </label>
       </div>
     </div>
@@ -44,5 +46,6 @@
   <script src="js/conversation.js"></script>
   <script src="js/payload.js"></script>
   <script src="js/global.js"></script>
+
 </body>
 </html>

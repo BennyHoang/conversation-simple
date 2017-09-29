@@ -1,0 +1,59 @@
+                body {
+                    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+                }
+
+                .chat-column {
+                    padding-top: 3rem;
+                    padding-bottom: 5rem;
+                    max-width: 35rem;
+                }
+
+                .from-user .message-inner:after,
+                .from-user .message-inner:before{
+                    display: none;
+                }
+
+                .from-watson p {
+                    /* border: 1px solid black; */
+                    display: inline-block;
+                    background: #551A8B;
+                    padding: 0.5rem;
+                    border-radius: 0.25rem;
+                }
+
+                .from-watson.latest p {
+                    color: white;
+                }
+
+                .from-watson p:before {
+                    display: none;
+                }
+
+                .inputOutline {
+                    background: white;
+                    padding: 1rem;
+                    border-radius: 0.25rem;
+                    position: relative;
+                }
+
+                #textInput+span {
+                    display: inline-block;
+                    float: right;
+                    width: auto;
+                    height: auto;
+                    vertical-align: middle;
+                    border: 0.1rem solid #eee;
+                    position: absolute;
+                    top: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 0.25rem;
+                    content: '';
+                    right: 0.5rem;
+                    color: #888;
+                    opacity: 0;
+                    transition: opacity 0.25s ease;
+                }
+
+                #textInput:focus+span {
+                    opacity: 1;
+                }
